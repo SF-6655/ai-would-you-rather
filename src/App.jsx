@@ -115,7 +115,7 @@ React to their choice in 2 sentences max. Be funny, roast them hard, and tell th
 
   function handleShare() {
     const chosen = choiceMade === "A" ? question.optionA : question.optionB;
-    const text = `Would You Rather?\n\nA: ${question.optionA}\nOR\nB: ${question.optionB}\n\nI chose: "${chosen}"\n\nPlay at: https://ai-would-you-rather.vercel.app`;
+    const text = `Would You Rather?\n\nA: ${question.optionA}\nOR\nB: ${question.optionB}\n\nI chose: "${chosen}"\n\nPlay at: https://ai-would-you-rather-nine.vercel.app`;
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
